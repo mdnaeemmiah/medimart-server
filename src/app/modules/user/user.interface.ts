@@ -9,7 +9,7 @@ export interface IUser {
     name: string;
     email: string;
     password: string;
-    role: 'customer' | 'mealProvider';
+    role: 'customer' | 'admin';
     phone?: string;
     address?: string;
     city?: string;
