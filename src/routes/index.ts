@@ -5,6 +5,7 @@ import messageRoute from '../app/modules/message/message.route';
 import userRouter from '../app/modules/user/user.route';
 import medicineRouter from '../app/modules/addMedicine/addMedicine.route';
 import orderRouter from '../app/modules/order/order.route';
+import doctorRoute from '../app/modules/doctor/doctor.route';
 
 
 
@@ -19,10 +20,10 @@ const moduleRoutes = [
       path: '/addMedicine',
       route: medicineRouter,
     },
-    // {
-    //   path: '/postPreference',
-    //   route: postPreferenceRouter,
-    // },
+    {
+      path: '/doctor',
+      route: doctorRoute,
+    },
     {
       path: '/order',
       route: orderRouter,
