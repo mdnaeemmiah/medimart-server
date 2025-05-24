@@ -17,7 +17,7 @@ app.use((0, cors_1.default)({ origin: "http://localhost:3000", credentials: true
 app.use((0, cookie_parser_1.default)());
 app.use('/api', routes_1.default);
 app.get("/", (req, res) => {
-    res.send("MealBox World!");
+    res.send("MediMart World!");
 });
 app.use(globalErrorHandler_1.default);
 app.use(notFound_1.default);

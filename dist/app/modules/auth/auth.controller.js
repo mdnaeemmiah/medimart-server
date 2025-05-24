@@ -1,9 +1,4 @@
 "use strict";
-// import { Request, Response } from "express";
-// import bcrypt from "bcryptjs";
-// import jwt from "jsonwebtoken"; // Importing jsonwebtoken
-// import { User } from "./auth.model"; // Assuming the User model is correctly imported
-// import config from "../../config";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -39,7 +34,7 @@ const register = (0, catchAsync_1.default)((req, res) => __awaiter(void 0, void 
     const result = yield auth_service_1.AuthService.register(req.body);
     const { name, email, role, password } = req.body;
     // Default role is 'user', can be 'admin' if specified
-    const newUserRole = role === 'mealProvider' ? 'mealProvider' : 'customer';
+    const newUserRole = role === 'admin' ? 'admin' : 'customer';
     const newUser = new user_model_1.User({
         name,
         email,

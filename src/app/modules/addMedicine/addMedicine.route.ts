@@ -14,7 +14,7 @@ medicineRouter.get('/:medicineId', medicineController.getSingleMedicine);
 medicineRouter.post('/create', medicineController.createMedicine);
 
 // Route to update an existing medicine by ID
-medicineRouter.put('/:id', medicineController.updateMedicine);
+medicineRouter.patch('/:id', medicineController.updateMedicine);
 
 // Route to delete a medicine by ID
 medicineRouter.delete('/:id', medicineController.deleteMedicine);

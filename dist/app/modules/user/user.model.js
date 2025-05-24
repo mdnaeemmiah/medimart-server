@@ -51,7 +51,7 @@ const UserSchema = new mongoose_1.Schema({
     },
     role: {
         type: String,
-        enum: ['customer', 'mealProvider'], // Only 'user' or 'admin' roles are allowed
+        enum: ['customer', 'admin'], // Only 'user' or 'admin' roles are allowed
         default: 'customer', // Default to 'user'
     },
     phone: { type: String, default: "N/A" },
