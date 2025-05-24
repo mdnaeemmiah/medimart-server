@@ -13,7 +13,7 @@ needMedicineRoute.get("/", needMedicineController.getAllNeedMedicines);
 needMedicineRoute.get("/:id", needMedicineController.getNeedMedicineById);
 
 // Update a need medicine request by ID
-needMedicineRoute.put("/:id", needMedicineController.updateNeedMedicine);
+needMedicineRoute.patch("/:id", needMedicineController.updateNeedMedicine);
 
 // Delete a need medicine request by ID
 needMedicineRoute.delete("/:id", needMedicineController.deleteNeedMedicine);
