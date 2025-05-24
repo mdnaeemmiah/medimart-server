@@ -1,3 +1,5 @@
+import { Types } from "mongoose";
+
 export interface INeedMedicine {
   medicineName: string;
   image: string;             // URL or base64 string
@@ -8,7 +10,7 @@ export interface INeedMedicine {
   location: string;
   notes?: string;            // optional notes
   status?: "pending" | "fulfilled" | "cancelled";  // default: "pending"
-  userId: string;            // user who posted the request
+   userId: Types.ObjectId;         // user who posted the request
   createdAt?: Date;          // auto-managed timestamps
   updatedAt?: Date;
 }
