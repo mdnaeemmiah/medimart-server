@@ -13,7 +13,7 @@ helpRoute.get("/", helpController.getAllHelpRequests);
 helpRoute.get("/:id", helpController.getHelpRequestById);
 
 // Update a help request by ID
-helpRoute.put("/:id", helpController.updateHelpRequest);
+helpRoute.patch("/:id", helpController.updateHelpRequest);
 
 // Delete a help request by ID
 helpRoute.delete("/:id", helpController.deleteHelpRequest);
