@@ -11,9 +11,9 @@ export const NeedMedicineZodSchema = z.object({
   location: z.string().min(1, "Location is required"),
   notes: z.string().optional(),
   status: z.enum(["pending", "fulfilled", "cancelled"]).optional().default("pending"),
-  userId: z
-    .string()
-    .refine((val) => Types.ObjectId.isValid(val), {
-      message: "Invalid userId (must be a valid ObjectId)",
-    }),
+//   userId: z
+//     .string()
+//     .refine((val) => Types.ObjectId.isValid(val), {
+//       message: "Invalid userId (must be a valid ObjectId)",
+//     }),
 });

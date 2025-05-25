@@ -17,7 +17,7 @@ const NeedMedicineSchema = new Schema<INeedMedicine>(
       enum: ["pending", "fulfilled", "cancelled"],
       default: "pending",
     },
-    userId: { type: Schema.Types.ObjectId, ref: "User", required: true },
+    // userId: { type: Schema.Types.ObjectId, ref: "User", required: true },
   },
   { timestamps: true }
 );
