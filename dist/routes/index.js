@@ -11,6 +11,8 @@ const user_route_1 = __importDefault(require("../app/modules/user/user.route"));
 const addMedicine_route_1 = __importDefault(require("../app/modules/addMedicine/addMedicine.route"));
 const order_route_1 = __importDefault(require("../app/modules/order/order.route"));
 const doctor_route_1 = __importDefault(require("../app/modules/doctor/doctor.route"));
+const needMedicine_route_1 = __importDefault(require("../app/modules/needMedicine/needMedicine.route"));
+const help_route_1 = __importDefault(require("../app/modules/help/help.route"));
 const router = (0, express_1.Router)();
 const moduleRoutes = [
     {
@@ -36,6 +38,14 @@ const moduleRoutes = [
     {
         path: '/user',
         route: user_route_1.default,
+    },
+    {
+        path: '/needMedicine',
+        route: needMedicine_route_1.default,
+    },
+    {
+        path: '/help',
+        route: help_route_1.default,
     },
 ];
 moduleRoutes.forEach((route) => router.use(route.path, route.route));
